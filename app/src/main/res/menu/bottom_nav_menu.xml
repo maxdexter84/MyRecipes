@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/allDishesFragment"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/favouriteDishesFragment"
+        android:icon="@drawable/ic_baseline_favorite_border_24"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/randomDishFragment"
+        android:icon="@drawable/ic_baseline_restaurant_menu_24"
+        android:title="@string/home" />
+</menu>
