@@ -1,4 +1,4 @@
-package ru.maxdexter.myrecipes.ui.fragments
+package ru.maxdexter.myrecipes.ui.fragments.alldishes
 
 import androidx.lifecycle.ViewModel
 
