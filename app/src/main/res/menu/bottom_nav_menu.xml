@@ -11,7 +11,7 @@
         android:title="@string/title_dashboard" />
 
     <item
-        android:id="@+id/randomDishFragment"
+        android:id="@+id/randomDishesFragment"
         android:icon="@drawable/ic_baseline_restaurant_menu_24"
         android:title="@string/home" />
 </menu>
