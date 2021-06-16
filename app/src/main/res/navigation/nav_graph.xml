@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/allDishesFragment">
+
+    <fragment
+        android:id="@+id/allDishesFragment"
+        android:name="ru.maxdexter.myrecipes.ui.fragments.alldishes.AllDishesFragment"
+        android:label="all_dishes_fragment"
+        tools:layout="@layout/all_dishes_fragment" />
+    <fragment
+        android:id="@+id/favouriteDishesFragment"
+        android:name="ru.maxdexter.myrecipes.ui.fragments.favouriteDishes.FavouriteDishesFragment"
+        android:label="favourite_dishes_fragment"
+        tools:layout="@layout/favourite_dishes_fragment" />
+    <fragment
+        android:id="@+id/randomDishesFragment"
+        android:name="ru.maxdexter.myrecipes.ui.fragments.randomdishes.RandomDishesFragment"
+        android:label="random_dishes_fragment"
+        tools:layout="@layout/random_dishes_fragment" />
+</navigation>

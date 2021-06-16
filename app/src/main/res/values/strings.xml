@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MyRecipes</string>
+    <string name="home">Home</string>
+    <string name="title_dashboard">dashboard</string>
+    <string name="title_favourite">favourite</string>
+    <string name="title_random">random</string>
+    <string name="splash_screen_title">My Recipes</string>
 </resources>
