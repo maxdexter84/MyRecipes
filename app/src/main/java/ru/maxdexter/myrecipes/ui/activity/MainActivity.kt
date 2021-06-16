@@ -1,7 +1,8 @@
-package ru.maxdexter.myrecipes
+package ru.maxdexter.myrecipes.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import ru.maxdexter.myrecipes.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

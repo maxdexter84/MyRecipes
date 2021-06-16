@@ -3,15 +3,11 @@ package ru.maxdexter.myrecipes.ui.activity
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.view.WindowInsets
 import android.view.WindowManager
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.coroutines.delay
-import ru.maxdexter.myrecipes.MainActivity
 import ru.maxdexter.myrecipes.R
 import ru.maxdexter.myrecipes.databinding.ActivitySplashBinding
 
