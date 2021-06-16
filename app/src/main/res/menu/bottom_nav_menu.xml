@@ -8,10 +8,10 @@
     <item
         android:id="@+id/favouriteDishesFragment"
         android:icon="@drawable/ic_baseline_favorite_border_24"
-        android:title="@string/title_dashboard" />
+        android:title="@string/title_favourite" />
 
     <item
         android:id="@+id/randomDishesFragment"
         android:icon="@drawable/ic_baseline_restaurant_menu_24"
-        android:title="@string/home" />
+        android:title="@string/title_random" />
 </menu>
