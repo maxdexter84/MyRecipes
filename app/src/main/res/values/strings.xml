@@ -5,4 +5,17 @@
     <string name="title_favourite">favourite</string>
     <string name="title_random">random</string>
     <string name="splash_screen_title">My Recipes</string>
+    <string name="add_dish_title">Add dish</string>
+    <string name="dish_type">Dish type</string>
+    <string name="dish_category">Dish category</string>
+    <string name="dish_ingredients">Dish ingredients</string>
+    <string name="dish_cooking_time_in_minutes">Dish cooking time in minutes</string>
+    <string name="dish_direction_to_cook">Dish direction to cook</string>
+    <string name="btn_add_dish">save dish</string>
+    <string name="dish_name">Dish name</string>
+    <string name="add_dish_photo_title">Add dish photo</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
 </resources>

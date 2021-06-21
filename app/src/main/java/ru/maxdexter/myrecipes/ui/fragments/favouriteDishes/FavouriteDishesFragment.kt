@@ -1,12 +1,13 @@
 package ru.maxdexter.myrecipes.ui.fragments.favouriteDishes
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import ru.maxdexter.myrecipes.R
+import ru.maxdexter.myrecipes.databinding.FavouriteDishesFragmentBinding
 
 class FavouriteDishesFragment : Fragment() {
 
@@ -14,19 +15,19 @@ class FavouriteDishesFragment : Fragment() {
         fun newInstance() = FavouriteDishesFragment()
     }
 
-    private lateinit var viewModel: FavouriteDishesViewModel
+    private val viewModel: FavouriteDishesViewModel by lazy {
+        ViewModelProvider(this).get(FavouriteDishesViewModel::class.java)
+    }
+
+    private lateinit var binding: FavouriteDishesFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.favourite_dishes_fragment, container, false)
+        binding = FavouriteDishesFragmentBinding.inflate(inflater)
+        return binding.root
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(FavouriteDishesViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
 
 }
