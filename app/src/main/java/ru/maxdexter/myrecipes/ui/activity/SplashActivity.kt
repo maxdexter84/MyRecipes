@@ -24,9 +24,9 @@ class SplashActivity : AppCompatActivity() {
 
         val splashAnimation = AnimationUtils.loadAnimation(this, R.anim.animation)
         binding.tvAppName.animation = splashAnimation
-        splashAnimation.setAnimationListener(object : Animation.AnimationListener{
+        splashAnimation.setAnimationListener(object : Animation.AnimationListener {
             override fun onAnimationStart(animation: Animation?) {
-
+                //
             }
 
             override fun onAnimationEnd(animation: Animation?) {
@@ -35,7 +35,7 @@ class SplashActivity : AppCompatActivity() {
             }
 
             override fun onAnimationRepeat(animation: Animation?) {
-
+                //
             }
         })
 

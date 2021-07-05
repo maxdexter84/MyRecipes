@@ -1,9 +1,11 @@
 package ru.maxdexter.myrecipes.ui.fragments.alldishes
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import android.view.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import ru.maxdexter.myrecipes.R
 import ru.maxdexter.myrecipes.databinding.AllDishesFragmentBinding

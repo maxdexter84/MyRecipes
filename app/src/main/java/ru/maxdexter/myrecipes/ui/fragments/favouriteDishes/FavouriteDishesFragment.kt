@@ -6,14 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import ru.maxdexter.myrecipes.R
 import ru.maxdexter.myrecipes.databinding.FavouriteDishesFragmentBinding
 
 class FavouriteDishesFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = FavouriteDishesFragment()
-    }
 
     private val viewModel: FavouriteDishesViewModel by lazy {
         ViewModelProvider(this).get(FavouriteDishesViewModel::class.java)
@@ -24,7 +20,7 @@ class FavouriteDishesFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FavouriteDishesFragmentBinding.inflate(inflater)
         return binding.root
     }

@@ -18,4 +18,5 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="gallery">Gallery</string>
     <string name="camera">Camera</string>
+    <string name="permission_rationale_false">if you want to access the camera or gallery, you need to go to settings.</string>
 </resources>

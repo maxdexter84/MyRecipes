@@ -1,20 +1,18 @@
 package ru.maxdexter.myrecipes.ui.fragments.randomdishes
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import ru.maxdexter.myrecipes.R
 
 class RandomDishesFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = RandomDishesFragment()
+    private val viewModel: RandomDishesViewModel by lazy {
+        ViewModelProvider(this).get(RandomDishesViewModel::class.java)
     }
-
-    private lateinit var viewModel: RandomDishesViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,10 +21,5 @@ class RandomDishesFragment : Fragment() {
         return inflater.inflate(R.layout.random_dishes_fragment, container, false)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(RandomDishesViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
 
 }
