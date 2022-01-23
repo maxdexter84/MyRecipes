@@ -1,2 +1,3 @@
 rootProject.name = "MyRecipes"
 include ':app'
+include ':buildSrc'
