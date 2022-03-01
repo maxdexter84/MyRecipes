@@ -6,7 +6,6 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import ru.maxdexter.myrecipes.R
 import ru.maxdexter.myrecipes.databinding.ActivityMainBinding
-import ru.maxdexter.myrecipes.ui.fragments.alldishes.AllDishesFragment
 
 class MainActivity : AppCompatActivity() {
 

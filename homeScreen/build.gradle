@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
 }
 
 android {
@@ -29,14 +31,36 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
 }
 
 dependencies {
+    implementation project(Modules.utils)
+    implementation project(Modules.core)
+    //noinspection GradleDependency
+    implementation Kotlin.stdlib
+    implementation Kotlin.coreKtx
+    implementation Design.appcompat
+    implementation Design.material
+    implementation Design.constraintLayout
+    implementation Design.support
+    implementation Lifecycle.livedata
+    implementation Lifecycle.viewModel
+    testImplementation Testing.jUnit
+    androidTestImplementation Testing.extJUnit
+    androidTestImplementation Testing.espresso
 
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'com.google.android.material:material:1.5.0'
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    // Navigation Components
+    implementation Navigation.fragmentNavigation
+    implementation Navigation.navigationUiNavigation
+
+    //Dagger
+    implementation Dagger.daggerAndroid
+    kapt Dagger.daggerCompiler
+    implementation Image.glide
+    implementation Image.glideAnnotationProcessor
 }

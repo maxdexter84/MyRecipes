@@ -32,13 +32,16 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures{
+    buildFeatures {
         viewBinding true
+        dataBinding true
     }
 }
 
 dependencies {
-
+    implementation project(Modules.favouriteScreen)
+    implementation project(Modules.homeScreen)
+    implementation project(Modules.randomScreen)
     //noinspection GradleDependency
     implementation Kotlin.stdlib
     implementation Kotlin.coreKtx
@@ -55,4 +58,9 @@ dependencies {
     // Navigation Components
     implementation Navigation.fragmentNavigation
     implementation Navigation.navigationUiNavigation
+
+    //Dagger
+    implementation Dagger.daggerAndroid
+    kapt Dagger.daggerCompiler
+
 }
