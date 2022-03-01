@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_rationale_false">if you want to access the camera or gallery, you need to go to settings.</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="dish_name">Dish name</string>
+    <string name="dish_type">Dish type</string>
+    <string name="dish_category">Dish category</string>
+    <string name="dish_ingredients">Dish ingredients</string>
+    <string name="dish_cooking_time_in_minutes">dish cooking time in minutes</string>
+    <string name="dish_direction_to_cook">dish direction to cook</string>
+    <string name="btn_add_dish">save dish</string>
+    <string name="add_dish_photo_title">Add dish photo</string>
+    <string name="add_dish_title">Add dish</string>
+    <string name="dialog_positiv_btn_text">Yes</string>
+</resources>

@@ -1,0 +1,66 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        minSdk 23
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+}
+
+dependencies {
+    implementation project(Modules.utils)
+    implementation project(Modules.core)
+    //noinspection GradleDependency
+    implementation Kotlin.stdlib
+    implementation Kotlin.coreKtx
+    implementation Design.appcompat
+    implementation Design.material
+    implementation Design.constraintLayout
+    implementation Design.support
+    implementation Lifecycle.livedata
+    implementation Lifecycle.viewModel
+    testImplementation Testing.jUnit
+    androidTestImplementation Testing.extJUnit
+    androidTestImplementation Testing.espresso
+
+    // Navigation Components
+    implementation Navigation.fragmentNavigation
+    implementation Navigation.navigationUiNavigation
+
+    //Dagger
+    implementation Dagger.daggerAndroid
+    kapt Dagger.daggerCompiler
+    implementation Image.glide
+    implementation Image.glideAnnotationProcessor
+}

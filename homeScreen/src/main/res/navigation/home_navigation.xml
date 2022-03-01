@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/allDishesFragment">
+
+    <fragment
+        android:id="@+id/allDishesFragment"
+        android:name="ru.maxdexter.homescreen.presenter.fragments.alldishes.AllDishesFragment"
+        android:label="all_dishes_fragment"
+        tools:layout="@layout/all_dishes_fragment" >
+        <action
+            android:id="@+id/action_allDishesFragment_to_newDishFragment"
+            app:destination="@id/newDishFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newDishFragment"
+        android:name="ru.maxdexter.homescreen.presenter.fragments.adddishes.NewDishFragment"
+        android:label="NewDishFragment" />
+</navigation>
