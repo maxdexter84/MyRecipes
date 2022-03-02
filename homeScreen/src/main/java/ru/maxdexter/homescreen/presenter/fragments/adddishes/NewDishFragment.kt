@@ -80,6 +80,7 @@ class NewDishFragment : Fragment() {
             goToAppSettings(shouldShowRequestPermissionRationale(Manifest.permission.CAMERA))
             val uri = DishUi.createFileImage(requireContext())
             viewModel.dish.dishImage = uri.toString()
+            viewModel.setImage(uri)
             getPhoto.launch(uri)
         }
     }
@@ -101,7 +102,6 @@ class NewDishFragment : Fragment() {
     }
 
     private fun customDialog() {
-
         multiPermission.launch(
             arrayOf(
                 Manifest.permission.WRITE_EXTERNAL_STORAGE,
@@ -114,7 +114,6 @@ class NewDishFragment : Fragment() {
         madeNewPhoto()
         dialog.setContentView(dialogBinding.root)
         dialog.show()
-
     }
 
     private fun goToAppSettings(showRequestPermission: Boolean) {
@@ -132,6 +131,8 @@ class NewDishFragment : Fragment() {
             }.show()
         }
     }
+
+
 
 
 }

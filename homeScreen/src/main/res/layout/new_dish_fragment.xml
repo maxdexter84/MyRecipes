@@ -81,6 +81,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
+                    android:onTextChanged="@{(s, start, before, count)->viewModel.saveDishTitle(s.toString())}"
                     android:textSize="@dimen/normal_text_size" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -102,6 +103,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="false"
+                    android:onTextChanged="@{(s, start, before, count)->viewModel.saveDishType(s.toString())}"
                     android:focusableInTouchMode="false"
                     android:inputType="text"
                     android:textSize="@dimen/normal_text_size" />
@@ -125,6 +127,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="false"
+                    android:onTextChanged="@{(s, start, before, count)->viewModel.saveDishCategory(s.toString())}"
                     android:focusableInTouchMode="false"
                     android:inputType="text"
                     android:textSize="@dimen/normal_text_size" />
@@ -148,6 +151,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="top"
+                    android:onTextChanged="@{(s, start, before, count)->viewModel.saveDishIngredients(s.toString())}"
                     android:inputType="textMultiLine"
                     android:minLines="5"
                     android:textSize="@dimen/normal_text_size" />
@@ -171,6 +175,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="top"
+                    android:onTextChanged="@{(s, start, before, count)->viewModel.saveDishCookingTime(s.toString())}"
                     android:inputType="text"
                     android:textSize="@dimen/normal_text_size" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -193,6 +198,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="top"
+                    android:onTextChanged="@{(s, start, before, count)->viewModel.saveDishDescriptionCooking(s.toString())}"
                     android:inputType="text"
                     android:textSize="@dimen/normal_text_size" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -208,6 +214,7 @@
                 android:layout_marginBottom="@dimen/spacing_20dp"
                 android:foreground="?attr/selectableItemBackground"
                 android:gravity="center"
+                android:onClick="@{()->viewModel.newDishSave()}"
                 android:text="@string/btn_add_dish"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

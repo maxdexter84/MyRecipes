@@ -13,11 +13,10 @@ data class DishUi(
     var dishType: String = "",
     var dishCategory: String = "",
     var dishIngredients: String = "",
-    var dishCookingTime: Int = 0,
+    var dishCookingTime: String = "",
     var cookingADish: String = "",
     var dishImage: String = ""
 ) {
-
     companion object{
         fun createFileImage(context: Context): Uri {
             val timeStamp: String =
